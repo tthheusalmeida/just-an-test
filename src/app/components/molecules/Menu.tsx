@@ -113,7 +113,7 @@ export default function Menu({ className }: ManuProps) {
             </ul>
           </div>
 
-          <FooterLabels disableAnimation />
+          <FooterLabels />
         </LazyModal>
       </Suspense>
     </>
