@@ -34,7 +34,7 @@ export default function Logo({
     >
       <Image
         alt="Logo"
-        src="/header/logo.png"
+        src="/header/main-logo.png"
         priority
         width={32}
         height={32}
@@ -43,7 +43,7 @@ export default function Logo({
 
       <Image
         alt="Logo"
-        src="/header/logo.png"
+        src="/header/main-logo.png"
         priority
         width={42}
         height={42}
