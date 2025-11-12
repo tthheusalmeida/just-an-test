@@ -215,7 +215,7 @@ export default function ActivityAreasSection() {
 
         <AnimatedComponent
           HTMLtag="span"
-          className="italic text-darkTurquoise-400 text-2xl mb-11 flex flex-row items-center justify-center gap-2 w-full"
+          className="italic text-darkTurquoise-400 text-2xl flex flex-row items-center justify-center gap-2 w-full mb-11"
         >
           <div className="hidden sm:block w-full h-[1px] bg-darkTurquoise-300 ml-2"></div>
           <span className="whitespace-nowrap">Como a TCC pode te ajudar?</span>
@@ -223,12 +223,13 @@ export default function ActivityAreasSection() {
         </AnimatedComponent>
       </div>
 
-      <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:justify-items-center">
+      <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:justify-items-center relative">
         {visibleCards.map((item, index) => (
           <ActivityCard
             key={index}
             {...item}
             onClick={() => handleClickOnActivityCard(item.title, item.text[2])}
+            style={{ zIndex: index }}
           />
         ))}
       </div>

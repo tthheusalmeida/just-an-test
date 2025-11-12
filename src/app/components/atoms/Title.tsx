@@ -4,9 +4,14 @@ import AnimatedComponent from "../molecules/AnimatedComponent";
 interface TitleProps {
   children?: React.ReactNode;
   className?: string;
+  disableAnimation?: boolean;
 }
 
-export default function Title({ children, className }: TitleProps) {
+export default function Title({
+  children,
+  className,
+  disableAnimation,
+}: TitleProps) {
   return (
     <AnimatedComponent
       className={mergeClassNames(
@@ -14,6 +19,7 @@ export default function Title({ children, className }: TitleProps) {
         className
       )}
       HTMLtag="h1"
+      disableAnimation={disableAnimation}
     >
       {children}
     </AnimatedComponent>

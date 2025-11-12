@@ -34,7 +34,7 @@ export default function Logo({
     >
       <Image
         alt="Logo"
-        src="/header/logo.svg"
+        src="/header/logo.png"
         priority
         width={32}
         height={32}
@@ -43,10 +43,10 @@ export default function Logo({
 
       <Image
         alt="Logo"
-        src="/header/logo.svg"
+        src="/header/logo.png"
         priority
-        width={56}
-        height={56}
+        width={42}
+        height={42}
         className={mergeClassNames("hidden md:inline", classNameLogo)}
       />
     </Link>

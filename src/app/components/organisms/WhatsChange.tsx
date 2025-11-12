@@ -1,7 +1,6 @@
 import MinorSectionTemplate from "@/templates/MinorSectionTemplate";
 import Image from "next/image";
 import Title from "../atoms/Title";
-import AnimatedComponent from "../molecules/AnimatedComponent";
 import AboutCard from "../molecules/AboutCard";
 
 export default function WhatsChange() {
@@ -48,28 +47,25 @@ export default function WhatsChange() {
     >
       <div className="sm:flex sm:flex-col sm:justify-center">
         <div className="sm:flex items-center">
-          <Title className="font-normal font-aboreto text-[32px] sm:text-4xl mt-16 sm:mt-0 sm:text-left whitespace-nowrap">
+          <Title
+            className="font-normal font-aboreto text-[32px] sm:text-4xl mt-16 sm:mt-0 sm:text-left whitespace-nowrap"
+            disableAnimation
+          >
             O que muda
           </Title>
 
           <div className="hidden sm:block w-full h-[1px] bg-white ml-2"></div>
         </div>
-        <AnimatedComponent
-          HTMLtag="span"
-          className="text-2xl sm:text-[32px] text-center whitespace-nowrap"
-        >
+        <span className="text-2xl sm:text-[32px] text-center whitespace-nowrap">
           durante os atendimentos?
-        </AnimatedComponent>
+        </span>
       </div>
 
-      <AnimatedComponent
-        HTMLtag="div"
-        className="flex flex-col sm:flex-row items-center justify-between gap-12 sm:gap-10 my-12"
-      >
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-12 sm:gap-10 my-12">
         {aboutCard.map((item, index) => (
           <AboutCard key={index} {...item} />
         ))}
-      </AnimatedComponent>
+      </div>
     </MinorSectionTemplate>
   );
 }

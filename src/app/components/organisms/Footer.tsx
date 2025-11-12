@@ -6,7 +6,6 @@ import Logo from "../molecules/Logo";
 import TextDivider from "../atoms/TextDivider";
 import Image from "next/image";
 import { tabsList, scrollIntoSection } from "./NavigationTabs";
-import AnimatedComponent from "../molecules/AnimatedComponent";
 import MinorSectionTemplate from "@/templates/MinorSectionTemplate";
 
 interface FooterProps {
@@ -21,48 +20,33 @@ export default function Footer({ className }: FooterProps) {
       noPaddingBottom
     >
       <div className="flex flex-col lg:grid lg:grid-cols-3 gap-16 items-center justify-center w-full rounded-lg bg-darkTurquoise-700 px-4">
-        <AnimatedComponent
-          HTMLtag="div"
-          className="flex flex-col items-center justify-between select-none mt-10 lg:mt-0"
-        >
+        <div className="flex flex-col items-center justify-between select-none mt-10 lg:mt-0">
           <Logo classNameLogo="w-16 h-16 mb-3.5" />
 
           <div className="flex flex-col">
-            <AnimatedComponent
-              HTMLtag="h1"
-              className="font-aboreto text-darkTurquoise-200 text-2xl"
-            >
+            <h1 className="font-aboreto text-darkTurquoise-200 text-2xl">
               Jéssica Rodrigues
-            </AnimatedComponent>
+            </h1>
 
             <TextDivider text="Psicóloga" textClassName="text-xs" />
           </div>
-        </AnimatedComponent>
+        </div>
 
         <div className="flex flex-col gap-4 items-center text-center text-white lg:m-8">
-          <AnimatedComponent
-            HTMLtag="h4"
-            className="text-darkTurquoise-300 italic font-bold"
-          >
-            Contato
-          </AnimatedComponent>
-          <AnimatedComponent HTMLtag="p" className="font-light">
-            Atendimento Online
-          </AnimatedComponent>
-          <AnimatedComponent HTMLtag="div">
+          <h4 className="text-darkTurquoise-300 italic font-bold">Contato</h4>
+          <p className="font-light">Atendimento Online</p>
+          <div>
             <strong>Agende através do WhatsApp:</strong>
-            <AnimatedComponent HTMLtag="p" className="font-light">
-              (31) 98474 2155
-            </AnimatedComponent>
-          </AnimatedComponent>
+            <p className="font-light">(31) 98474 2155</p>
+          </div>
 
-          <AnimatedComponent HTMLtag="p" className="text-base/[18px]">
+          <p className="text-base/[18px]">
             <strong>ATENÇÃO: </strong> Este site não oferece atendimento de
             emergência. Se você ou alguém estiver em risco, procure um hospital
             ou ligue 192 (SAMU).
-          </AnimatedComponent>
+          </p>
 
-          <AnimatedComponent HTMLtag="span">
+          <span>
             <a
               href="https://www.instagram.com/jessicarpsicologa/"
               target="_blank"
@@ -74,31 +58,24 @@ export default function Footer({ className }: FooterProps) {
                 alt="Instagram logo"
               />
             </a>
-          </AnimatedComponent>
+          </span>
         </div>
 
         <div className="mb-10 lg:mb-0">
-          <AnimatedComponent
-            HTMLtag="h4"
-            className="text-darkTurquoise-300 italic font-bold mb-4 text-center"
-          >
+          <h4 className="text-darkTurquoise-300 italic font-bold mb-4 text-center">
             Mapa do Site
-          </AnimatedComponent>
+          </h4>
 
           <div className="flex flex-col gap-2">
             {tabsList.map((item, index) => (
-              <AnimatedComponent
-                key={index}
-                HTMLtag="span"
-                className="text-center"
-              >
+              <span key={index} className="text-center">
                 <span
                   className="font-light text-darkTurquoise-300 hover:text-darkTurquoise-100 text-center"
                   onClick={() => scrollIntoSection(item.id)}
                 >
                   {item.label}
                 </span>
-              </AnimatedComponent>
+              </span>
             ))}
           </div>
         </div>

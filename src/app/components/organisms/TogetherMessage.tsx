@@ -1,5 +1,4 @@
 import MinorSectionTemplate from "@/templates/MinorSectionTemplate";
-import AnimatedComponent from "../molecules/AnimatedComponent";
 
 export default function TogetherMessage() {
   return (
@@ -9,15 +8,15 @@ export default function TogetherMessage() {
       noPaddingBottom
       isTranparentBackgroud
     >
-      <AnimatedComponent HTMLtag="span" className="text-center mt-28 lg:mt-0">
+      <span className="text-center mt-28 lg:mt-0">
         <strong className="font-semibold">
           A terapia é um processo colaborativo:
         </strong>{" "}
         Você traz sua história, eu trago a técnica.
-      </AnimatedComponent>
-      <AnimatedComponent HTMLtag="span" className="text-center mb-28 lg:mb-0">
+      </span>
+      <span className="text-center mb-28 lg:mb-0">
         Juntos, construímos clareza, autonomia e equilíbrio emocional.
-      </AnimatedComponent>
+      </span>
     </MinorSectionTemplate>
   );
 }

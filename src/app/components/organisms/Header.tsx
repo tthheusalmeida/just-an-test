@@ -13,7 +13,7 @@ export default function Header() {
       slideUp
     >
       <PageTemplate>
-        <div className="flex items-center justify-between sm:justify-around h-12 sm:h-32 mt-4 border-t-[3px] border-darkTurquoise-200 rounded-lg select-none mx-4 bg-darkTurquoise-700 px-4 py-2">
+        <div className="flex items-center justify-between sm:justify-around h-12 sm:h-24 mt-4 border-t-[3px] border-darkTurquoise-200 rounded-lg select-none mx-4 bg-darkTurquoise-700 px-4 py-2">
           <Logo className="block sm:hidden" />
           <div className="flex flex-col sm:hidden">
             <h1 className="font-aboreto text-darkTurquoise-200">

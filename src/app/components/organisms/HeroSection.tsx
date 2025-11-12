@@ -23,11 +23,13 @@ export default function HeroSection() {
               Jéssica Rodrigues
             </Title>
 
-            <TextDivider
-              text="Psicáloga clínica"
-              textClassName="text-[20px] text-darkTurquoise-500"
-              lineClassName="text-darkTurquoise-500"
-            />
+            <AnimatedComponent HTMLtag="span">
+              <TextDivider
+                text="Psicáloga clínica"
+                textClassName="text-[20px] text-darkTurquoise-500"
+                lineClassName="text-darkTurquoise-500"
+              />
+            </AnimatedComponent>
 
             <AnimatedComponent
               HTMLtag="span"

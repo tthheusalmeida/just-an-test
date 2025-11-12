@@ -14,6 +14,7 @@ export interface ActivityCardProps {
   image: React.ReactElement;
   title: string;
   text: string[];
+  style?: object;
   className?: string;
   onClick: () => void;
 }
@@ -22,12 +23,19 @@ export default function ActivityCard({
   image,
   title,
   text,
+  style,
   className,
   onClick,
 }: ActivityCardProps) {
   return (
-    <div className={mergeClassNames("flex flex-col items-center", className)}>
-      <AnimatedComponent HTMLtag="div" className="inline-block">
+    <div
+      className={mergeClassNames(
+        "flex flex-col items-center sticky top-0 bg-white pt-10",
+        className
+      )}
+      style={style}
+    >
+      <AnimatedComponent HTMLtag="div" className="inline-block p-[1px]">
         {image}
       </AnimatedComponent>
 

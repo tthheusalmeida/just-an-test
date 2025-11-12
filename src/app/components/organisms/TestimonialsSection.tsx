@@ -40,7 +40,7 @@ export default function TestimonialsSection() {
         height={700}
         width={700}
         priority
-        className="absolute left-[25%] -top-46 -translate-x-1/2 translate-y-1/2"
+        className="hidden absolute left-[25%] -top-46 -translate-x-1/2 translate-y-1/2"
       />
       <TransparentBackground className="items-center text-darkTurquoise-100 sm:grid sm:grid-cols-2 sm:gap-10">
         <div className="flex flex-col items-center sm:items-start">
@@ -63,7 +63,7 @@ export default function TestimonialsSection() {
           ))}
         </div>
 
-        <div className="relative h-[600px] overflow-hidden my-12 hidden sm:block">
+        <div className="relative h-[700px] overflow-hidden mt-12 mb-4 hidden sm:block">
           <div className="animate-scroll-vertical flex flex-col gap-6 hover:[animation-play-state:paused] ml-10">
             {testimonials.map((item, index) => (
               <Testimonial key={`a-${index}`} {...item} />

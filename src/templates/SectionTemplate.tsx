@@ -35,7 +35,7 @@ export default function SectionTemplate({
       {showBackground && (
         <>
           <Image
-            src="/hero/hero-mobile.webp"
+            src="/hero/hero-mobile.png"
             alt="Jéssica olhando em diagonal"
             fill
             priority
