@@ -15,7 +15,7 @@ export default function TogetherMessage() {
         Você traz sua história, eu trago a técnica.
       </span>
       <span className="text-center mb-28 lg:mb-0">
-        Juntos, construímos clareza, autonomia e equilíbrio emocional.
+        Juntos construímos aprendizado, autonomia e estabilidade emocional.
       </span>
     </MinorSectionTemplate>
   );

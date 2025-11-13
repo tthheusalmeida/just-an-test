@@ -16,15 +16,16 @@ export default function MeetingSection() {
       subtitle: "Acolhimento e Escuta",
       description: (
         <span className="font-light">
-          Um espaço seguro para você falar no seu ritmo. Vamos efinimos
-          objetivos terapêuticos e explico comoa TCC funciona.
+          Um espaço seguro para você falar no seu ritmo. Vamos mapear seu
+          sofrimento, definir objetivos terapêuticos e já te apresentar a nossa
+          estrutura das consultas.
         </span>
       ),
       text: "A primeira sessão em Terapia Cognitivo-Comportamental (TCC) é um momento de acolhimento e escuta. Nela, você terá espaço para contar, no seu ritmo, o que o trouxe até aqui. O objetivo principal é compreender sua história, identificar suas principais queixas e começar a mapear padrões de pensamentos, emoções, comportamentos e principalmente estabelecer seus objetivos terapeuticos. Também explico como a TCC funciona, quais são as etapas do processo terapêutico e tiramos dúvidas sobre o funcionamento da terapia. Mais do que tudo, essa é uma oportunidade para você se sentir seguro(a) e entender que não está sozinho(a) nesse caminho.",
     },
     {
       title: "Duração",
-      subtitle: "Seu momento de Pausa",
+      subtitle: "Seu momento de aprender",
       description: (
         <span className="font-light">
           Cada encontro dura cerca de <strong>50 minutos</strong>, com foco nos
@@ -35,7 +36,7 @@ export default function MeetingSection() {
     },
     {
       title: "Frequência",
-      subtitle: "Consistência é Essencia",
+      subtitle: "Consistência é Essencial",
       description: (
         <span className="font-light">
           As sessões são semanais para garantir resultados sólidos das técnicas

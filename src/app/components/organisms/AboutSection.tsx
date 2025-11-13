@@ -24,7 +24,7 @@ export default function AboutSection() {
   const sessionsDetails = [
     "Identificar e modificar padrões mentais que geram sofrimento;",
     "Desenvolver novas formas de pensar e agir;",
-    "Fortalecer o autocontrole e a autonomia emocional.",
+    "Fortalecer autocontrole e autonomia psicológica e emocional.",
   ];
 
   return (
@@ -55,7 +55,7 @@ export default function AboutSection() {
               </Title>
 
               <TextDivider
-                text="PSICÓLOGA | CRP 04/6512"
+                text="PSICÓLOGA | CRP 04/65123"
                 textClassName="text-base text-darkTurquoise-500"
                 lineClassName="text-darkTurquoise-500"
                 className="z-1"
@@ -106,7 +106,12 @@ export default function AboutSection() {
                 Durante as sessões, trabalhamos juntos para:
               </AnimatedComponent>
 
-              <UnorderedList items={sessionsDetails} className="!mb-14" />
+              <UnorderedList items={sessionsDetails} className="!mb-4" />
+
+              <AnimatedComponent HTMLtag="p" className="font-light mb-14">
+                Nossa função juntos é que vc aprenda a reproduzir sozinho o que
+                desenvolvemos em consultas.
+              </AnimatedComponent>
 
               <Button
                 onClick={() => setIsOpen(true)}
